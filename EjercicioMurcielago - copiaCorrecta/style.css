@@ -1,0 +1,89 @@
+/* Estilos generales */
+:root {
+    /* Colores Principales */
+    --azul: #134c8f;
+    --verdoso: #45b8ac;
+    --grisaceo: #b6e1f9;
+    /* Colores Secundarios */
+    --azul-claro: #0473ba;
+    --naranja: #ff9c00;
+    --lila: #582c83;
+    --verde-pistacho: #86d295;
+    --negro-oscuro: #101820;
+    --gris-oscuro: #6f7271;
+    --gris-intermedio: #c1c5c8;
+    --gris-claro: #f7f7f7;
+}
+
+/* Encabezado */
+header {
+    background-color: var(--azul);
+    padding: 35px 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--grisaceo);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body ocupe al menos el 100% de la altura de la ventana */
+}
+
+/* Contenedor de las cartas */
+.card-container {
+    flex: 1; /* Hace que el contenido ocupe el espacio restante */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 20px; /* Espacio entre las cards */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    padding: 20px; /* Espacio interno */
+}
+
+/* Las 6 cartas */
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Evita que las imágenes se salgan de la card */
+}
+
+/* Imágenes dentro de las cards */
+.card img {
+    width: 100%; /* La imagen ocupa todo el ancho de la card */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio adicional debajo de la imagen */
+}
+
+/* Footer */
+footer {
+    background-color: var(--azul);
+    width: 100%;
+    height: 70px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Iconos en el footer */
+.icon-container {
+    gap: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding-top: 20px;
+}
+
+.icon  {
+    width: 35px;
+    height: 35px;
+}
+
+img:hover{
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
+
+
+
